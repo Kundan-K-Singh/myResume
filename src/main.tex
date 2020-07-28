@@ -1,0 +1,186 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\addtolength{\topmargin}{-.3in}
+\textwidth = 7.5in
+\addtolength{\oddsidemargin}{-.4in}
+%\addtolength{\footskip}{-2.0in}
+%\addtolength{\evensidemargin}{-.5in}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Kundan}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Kumar}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Software Developer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Patna}\\
+	\icon{Phone}{12}{+91 8884211129}\\
+	\icon{At}{12}{\href{mailto:mekundankk@gmail.com}{mekundankk@gmail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/Kundan-K-Singh/}{Kundan-K-Singh}}\\
+	\icon{Github}{12}{\href{https://github.com/Kundan-K-Singh}{Kundan-K-Singh}}\\
+	%\icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{About Me}
+
+\begin{minipage}[t]{0.6\textwidth} % 60% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	 $\bullet$ An Electrical Engineering graduate from IIT Delhi, having a total work experience of 3.5+ years as software developer in the field of IoT, Healthcare and Back-End at BOSCH and Amazon. $\bullet$ Have basic understanding of engineering principles, viz. project management, importance of quality and safety, engineering ethics and values. $\bullet$ I can easily adapt to new technologies and hence open to adopt new career path.\\ % About Me text
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.35\textwidth} % 40% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{4} % Total length of bars at 100%
+		\baritem{Java}{80}
+		\baritem{C/C++}{60}
+		\baritem{Python}{50}
+		\baritem{DS \& Algo}{90}
+	\end{barchart}
+\end{minipage}
+
+%\begin{center}
+%	\bubbles{ 5/Software Engg, 3/Mathematics, 4/Electrical Engg., 3/Biology, 2/Psychology}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2017 -- 2018\\\footnotesize{Full Time}}
+		{Back-End Developer}
+		{Amazon India Pvt. Ltd.}
+		{$\bullet$Maintained,  improved, scaled/descaled  Gateway Service and Search and Discovery Service for Amazon Appstore. $\bullet$ Decoupled the Gateway Service from various dependencies so that it can be deprecated to a library to be used by downstream services which would eventually lead to an estimated annual savings of 4m USD in host machines.\\ \texttt{Java}\slashsep\texttt{Git}\slashsep\texttt{Linux}}
+	\entry
+		{2014 -- 2017\\\footnotesize{Full Time}}
+		{IoT Developer}
+		{Robert Bosch Engineering \& Business Solutions Pvt. Ltd.}
+		{ $\bullet$ Designed and implemented a method for OTA diff upgrade for a low storage capacity devices. $\bullet$ Implemented an emergency alert system in automobiles that was triggered by user or an event. $\bullet$  Designed an application to form a economic Xbee network for automated agricultural field monitoring and maintenance. Also created a library for the Xbee protocol and exposed APIs for easy interfacing with controllers. \\ \texttt{C}\slashsep\texttt{Java}\slashsep\texttt{Hardware Interfacing}\slashsep\texttt{Python}}
+	\entry
+		{2015 -- 2016\\\footnotesize{Full Time}}
+		{Healthcare Devices Development}
+		{Robert Bosch Engineering  \& Business Solutions  Pvt. Ltd.}
+		{$\bullet$ Did complete design of hardware and development of software for POC handheld Blood Potassium monitoring device that could tell the blood potassium level much like a blood glucose meter for diabetics. \\ \texttt{C}\slashsep\texttt{Electronics}\slashsep\texttt{Electrochemistry} \slashsep\texttt{Product Development}}
+\entry
+		{2017 -- 2018\\\footnotesize{}}
+		{Miscellaneous}
+		{Robert Bosch Engineering  \& Business Solutiosn  Pvt. Ltd.}
+		{$\bullet$ Designed and developed a library with wrapper layer that abstracted  the driver layer and exposed APIs to easily configure the dot matrix LCD display that displayed mobile like menu screen and screens to take alpha-numeric inputs on a device that only had navigation keys. $\bullet$ Designed an application using Python that read data from Flash storage of controller and transferred it to PC via COM-Port. \\ \texttt{C}\slashsep\texttt{Python}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2010 -- 2014}
+		{Bachelor’s  Degree in Electrical Engineering}
+		{Indian Institute of Technology Delhi}
+		{$\bullet$ Got a category rank of 174 in IIT-JEE 2010 where close to 5 lac students appeared in examination.$\bullet$  Passed out with CGPA of 6.9 overall with knowledge in wide spectrum that included that in Computer Science, Mathematics, Psychology and Safety in Engineering.}
+	\entry
+		{Up till 2010}
+		{Secondary and Higher Secondary}
+		{St. Joseph's Public School, Dalsinghsarai}
+		{$\bullet$ Consistently obtained first rank in the class all through middle and high school. $\bullet$ Got AIR 162 in National Science Talent Search Examination and got selected for final interview in NTSE conducted by GoI.$\bullet$  Got 95\% and 85\% in 10th and 12th board examination respectively. }
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.4\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Strengths}
+	
+	{\bubbles{ 5/}}\textbf{ Problem Solving}\\
+	{\bubbles{ 4/}}\textbf{Analytic Approach}\\
+	{\bubbles{ 3/}}\textbf{Knowledge Outside of Core Domain}\\
+	{\bubbles{ 3/}}\textbf{Affinity to New Skills/Technologies}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+	{\bubbles{ 4/}}\textbf{ Cooking}\\
+	{\bubbles{ 2/}}\textbf{Cycling}\\
+	{\bubbles{ 2/}}\textbf{Jogging}\\
+	{\bubbles{ 3/}}\textbf{Teaching}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Other Proficiency}
+	
+	{\bubbles{ 4/}}\textbf{Science and Tech.}\\
+	{\bubbles{ 2/}}\textbf{Mathematics}\\
+	{\bubbles{ 3/}}\textbf{Biology}\\
+	{\bubbles{ 5/}}\textbf{Electrical and Electronics Engg.}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
